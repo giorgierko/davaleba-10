@@ -1,0 +1,150 @@
+.conteiner 
+{
+max-width: 1280px;
+width: 100%;
+margin: 0 auto;
+border: 2px red solid;
+
+
+  
+
+}
+
+header
+{
+width: 100%;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 5fr;
+grid-template-rows: 100px;
+}
+
+.HEADER 
+{
+background-color: rgb(2, 2, 39);
+display: grid;
+place-content:center;
+
+}
+
+.MANU {
+    background-color: rgb(211, 121, 121);
+    display: grid;
+    place-content:center;
+
+    
+}
+
+.sat1
+{
+    color: white;
+    
+    
+}
+
+.sat2
+{
+    color: white;
+    
+}
+
+/* დასრულდა ჰედერი */
+
+section
+{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(98, 98, 231);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px;
+    /* place-content: center; */
+    /* ამ კოდმა რატომ არ გაცენტრა? */
+  
+
+}
+
+.txt3 {
+    color: white;
+    margin: auto;
+   
+
+}
+
+/* დამთავრდა სექშენი */
+
+article
+{
+ width: 100%;
+ height: 300px;;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 3fr 2fr 2fr;
+ grid-template-rows: 3fr 1fr 1fr ;
+
+}
+
+.MAIN
+{
+
+    background-color: rgb(56, 56, 173);
+    display: grid;
+    place-content: center;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+
+.TETRI
+{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.IMAGE
+{
+
+    background-color: rgb(112, 235, 112);
+    display: grid;
+    place-content: center;
+    grid-row-start: -4;
+    grid-row-end: -3;
+    
+    
+
+}
+
+
+.EXTRA
+{
+    background-color: rgb(31, 172, 31);
+    display: grid;
+    place-content: center;
+    grid-row-start: -3;
+    grid-row-end: -1;
+    
+}
+
+/* რამდენად შუაზე ყოფენ image და extra დივები  მათ უჯრას? */
+
+
+/* დამთავრდა არტიკლი */
+
+footer
+{
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: rgb(238, 238, 76);
+    display: grid;
+}
+
+.text7
+{
+    color: white;
+    margin: auto;
+
+}

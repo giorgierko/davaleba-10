@@ -1,0 +1,16 @@
+@media(max-width: 768px)
+
+{
+
+.HEADER
+
+{ grid-template-column: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  
+
+}
+
+
+    
+}

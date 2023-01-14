@@ -1,150 +1,111 @@
-.conteiner 
+:root 
 {
-max-width: 1280px;
-width: 100%;
-margin: 0 auto;
-border: 2px red solid;
 
-
-  
-
+--tetri: rgb(255, 255, 255);
+--fonti: 20px;
+--Savi:rgb(0, 0, 0); 
 }
 
-header
+.conteiner
 {
-width: 100%;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 5fr;
-grid-template-rows: 100px;
-}
-
-.HEADER 
-{
-background-color: rgb(2, 2, 39);
-display: grid;
-place-content:center;
-
-}
-
-.MANU {
-    background-color: rgb(211, 121, 121);
-    display: grid;
-    place-content:center;
-
-    
-}
-
-.sat1
-{
-    color: white;
-    
-    
-}
-
-.sat2
-{
-    color: white;
-    
-}
-
-/* დასრულდა ჰედერი */
-
-section
-{
+    max-width: 1280px;
     width: 100%;
+    background-color: white;
     margin: 0 auto;
-    background-color: rgb(98, 98, 231);
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 500px;
-    /* place-content: center; */
-    /* ამ კოდმა რატომ არ გაცენტრა? */
-  
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 6fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "header menu menu menu"
+    "hero hero hero hero"
+    "main main .  image"
+    "main main . extra"
+    "banner banner banner banner";
+}
+
+.HEADER {
+    background-color: rgb(3, 3, 49);
+    grid-area: header;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* ამ დივის flax გადაქცევის გარდა, ტექსტის გაცენტვრის სხვა ვარიანტი არ არის ჰო?
+    გრიდადაც რომ არ გადავაქციო ისე */
+
+    
+    /* სიმაღლე მივანიჭე მხოლოდ HEADER დივს. დანარჩენების სიმაღლეს
+    ამ სიმაღლის პროპორციულად იღებს რადგან fr მაქვს განაწილებული.
+    შეცდომა ხომ არაა? */
+    
+    
 
 }
 
-.txt3 {
-    color: white;
-    margin: auto;
-   
+.MENU {
 
+    background-color: rgb(207, 52, 52);
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* დამთავრდა სექშენი */
-
-article
+.HERO 
 {
- width: 100%;
- height: 300px;;
- margin: 0 auto;
- display: grid;
- grid-template-columns: 3fr 2fr 2fr;
- grid-template-rows: 3fr 1fr 1fr ;
-
+    background-color: rgb(53, 97, 240);
+    grid-area: hero;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .MAIN
 {
-
-    background-color: rgb(56, 56, 173);
-    display: grid;
-    place-content: center;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    
+    background-color: rgb(54, 44, 143);
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.TETRI
-{
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
 
 .IMAGE
 {
-
-    background-color: rgb(112, 235, 112);
-    display: grid;
-    place-content: center;
-    grid-row-start: -4;
-    grid-row-end: -3;
-    
-    
-
+    background-color: rgb(87, 207, 228);  
+    grid-area: image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 .EXTRA
 {
-    background-color: rgb(31, 172, 31);
-    display: grid;
-    place-content: center;
-    grid-row-start: -3;
-    grid-row-end: -1;
-    
+    background-color: rgb(50, 211, 71);  
+    grid-area: extra;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* რამდენად შუაზე ყოფენ image და extra დივები  მათ უჯრას? */
-
-
-/* დამთავრდა არტიკლი */
-
-footer
+.BANNER
 {
-    width: 100%;
-    height: 70px;
-    margin: 0 auto;
-    background-color: rgb(238, 238, 76);
-    display: grid;
+    background-color: rgb(216, 216, 22);
+    grid-area: banner;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.text7
-{
-    color: white;
-    margin: auto;
+p{
 
+    color: var(--tetri);
+    font-size: var(--fonti);
+
+}
+
+.difertxt
+{
+
+    color: var(--Savi);
 }

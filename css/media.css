@@ -2,15 +2,22 @@
 
 {
 
-.HEADER
-
-{ grid-template-column: 100%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  
-
+    .conteiner
+{
+    
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
+    grid-template-areas: 
+    "header header header header"
+    "hero hero hero hero"
+    "menu main main main"
+    "menu banner banner banner"
+    "menu extra extra image"
 }
-
 
     
 }

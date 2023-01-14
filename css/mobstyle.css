@@ -1,0 +1,25 @@
+@media(max-width: 480px)
+
+{
+
+    .conteiner
+{
+    
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "hero"
+    "main"
+    "banner"
+    "extra"
+    "image"
+}
+
+    
+}
